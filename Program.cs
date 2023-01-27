@@ -7,6 +7,7 @@ namespace CSharpLearn
         static void Main(string[] args)
         {
             //Working with Numbers
+            /*
             int num1 = 5;
             int num2 = 10;
 
@@ -21,7 +22,7 @@ namespace CSharpLearn
             Console.WriteLine(num2 + " - " + num1 + " = " + substract);
             Console.WriteLine(num2 + " / " + num1 + " = " + divide);
             Console.WriteLine(num2 + " % " + num1 + " = " + modulo);
-
+            */
 
 
 
@@ -45,6 +46,42 @@ namespace CSharpLearn
 
             Console.WriteLine("Nice to meet you, " + name + " your age is " + age);
             */
+            
+
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter an operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("Enter an number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            if(op == "+")
+            {
+                Console.Write(num1 + " + " + num2 + " = ");
+                Console.WriteLine(num1 + num2);
+            }
+            else if(op == "-")
+            {
+                Console.Write(num1 + " - " + num2 + " = ");
+                Console.WriteLine(num1 - num2);
+            }
+            else if(op == "/")
+            {
+                Console.Write(num1 + " / " + num2 + " = ");
+                Console.WriteLine(num1 / num2);
+            }
+            else if(op == "*")
+            {
+                Console.Write(num1 + " * " + num2 + " = ");
+                Console.WriteLine(num1 * num2);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Operator!");
+            }
         }
     }
 }
